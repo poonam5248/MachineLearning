@@ -1,0 +1,63 @@
+                                Types of Functions in Python
+
+In real time, a function may be defined with or without parameters, and a function may or may not return a value. It is completely depends upon the user requirement.
+
+The following are the list of available types of functions in Python
+
+1.Function with no argument and no Return value.
+2.Function with no argument and with Return value.
+3.Python Function with argument and No Return value.
+4.Function with argument and Return value.
+
+                         Types of Functions in Python
+
+1.Python Function with No argument and No Return value
+
+In this type of function in Python, While defining, declaring or calling the function, We won’t pass any arguments to the function. This type of functions will not return any value when we call the function.
+
+EXAMPLE: 
+
+def Adding():
+    a = 20
+    b = 30
+    Sum = a + b
+    print("After Calling the Function:", Sum)
+Adding()
+
+
+2.Python Function with no argument and with Return value
+
+In this type of function in Python, We won’t pass any arguments to the function while defining, declaring or calling the function. When we call the function, this type of functions will return some value.
+
+EXAMPLE:
+
+def Multiplication():
+    a = 10
+    b = 25
+    Multi = a * b
+    return Multi
+print("After Calling the Multiplication Function: ", Multiplication())
+
+3.Python Function with argument and No Return value
+
+This type of function in Python allows us to pass the arguments to the function while calling the function. But, This type of functions in Python will not return any value when we call the function.
+
+EXAMPLE:
+
+def Multiplications(a, b):
+    Multi = a * b
+    print("After Calling the Function:", Multi)
+
+Multiplications(10, 20)
+
+4.Python Function with argument and Return value
+
+This method allows us to pass the arguments to the function while calling the function. This type of functions in Python will return some value when we call the function. This type of user defined functions are called as fully dynamic function means, it provide maximum control to the end-user.
+
+EXAMPLE:
+
+def Addition(a, b):
+    Sum = a + b
+    return Sum
+# We are calling the Function Outside the Function Definition
+print("After Calling the Function:", Addition(25, 45))

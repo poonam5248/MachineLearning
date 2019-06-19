@@ -1,0 +1,103 @@
+1. Creating a Function
+
+In Python a function is defined using the def keyword:
+
+Example
+
+def my_function():
+  print("Hello from a function")
+
+2.Calling a Function
+
+To call a function, use the function name followed by parenthesis:
+
+Example
+
+def my_function():
+  print("Hello from a function")
+
+my_function()
+
+3. Parameters
+
+Information can be passed to functions as parameter.
+
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+The following example has a function with one parameter (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
+
+Example
+
+def my_function(fname):
+  print(fname + " Kaur")
+
+my_function("Poonam")
+my_function("Harjeet")
+my_function("Mandeep")
+ 
+4. Default Parameter Value
+
+The following example shows how to use a default parameter value.
+
+If we call the function without parameter, it uses the default value:
+
+Example
+
+def my_function(country = "Norway"):
+  print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+5. Passing a List as a Parameter
+
+You can send any data types of parameter to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+
+E.g. if you send a List as a parameter, it will still be a List when it reaches the function:
+
+Example
+
+def my_function(food):
+  for x in food:
+    print(x)
+
+fruits = ["Apple", "Banana", "Mango"]
+
+my_function(fruits)
+
+6. Return Values
+
+To let a function return a value, use the return statement:
+
+Example
+
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+7. Recursion
+
+Python also accepts function recursion, which means a defined function can call itself.
+
+Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.
+
+The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.
+
+
+Example
+
+def tri_recursion(k):
+  if(k>0):
+    result = k+tri_recursion(k-1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
