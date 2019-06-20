@@ -1,4 +1,4 @@
-                                  LAMBDA FUNCTION
+                                   LAMBDA FUNCTION
 
 A lambda function is a small anonymous function.
 

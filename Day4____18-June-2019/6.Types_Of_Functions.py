@@ -10,6 +10,7 @@ def Adding():
 Adding()
 
 
+
 # 2. Python function with No arguments and with return values
 
 def Multiplication():
