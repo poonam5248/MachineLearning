@@ -10,11 +10,11 @@
 
 
 # 1.
-##import os
-##print(os.name)
-##print(os.path)
-##print(os.getcwd()) # Get current working directory
-##
+import os
+print(os.name)
+print(os.path)
+print(os.getcwd()) # Get current working directory
+
 
 # 2.
 
@@ -35,81 +35,80 @@
 
 # 3.
 
-##import time
-##print("Hello")
-##time.sleep(5)
-##print("How are you?")
+import time
+print("Hello")
+time.sleep(5)
+print("How are you?")
 
 # 4.
-##import time
-##t1=time.time()
-##for i in range(1,10):
-##    print(i)
-##    time.sleep(1)
-##t2=time.time()
-##print(t2-t1)
+import time
+t1=time.time()
+for i in range(1,10):
+    print(i)
+    time.sleep(1)
+t2=time.time()
+print(t2-t1)
 
 # 5.
-##
-##def sleep_min(t):
-##    time.sleep(60*t)
-##t1=time.time()
-##for i in range(1,10):
-##    print(i)
-##    sleep_min(1)
-##t2=time.time()
-##print(t2-t1)
+
+def sleep_min(t):
+    time.sleep(60*t)
+t1=time.time()
+for i in range(1,10):
+    print(i)
+    sleep_min(1)
+t2=time.time()
+print(t2-t1)
 
 # 6.
 
-##import time
-##
-##print(time.ctime())
-##t=time.ctime()
-##print(t,type(t))
-##print(t[11:19],type(t))
+import time
+
+print(time.ctime())
+t=time.ctime()
+print(t,type(t))
+print(t[11:19],type(t))
 
 # 7.
 
-##import time
-##u=input("Enter your Question: ")
-##if(u=="What is The time: "):
-##    t=time.ctime()
-##    print(t[11:19],type(t))
+import time
+u=input("Enter your Question: ")
+if(u=="What is The time: "):
+    t=time.ctime()
+    print(t[11:19],type(t))
 
 # 8.
 
-##import time
-##q='1'
-##while(q!='*'):
-##    u=input("Enter Your Question: ")
-##    if(u=='Hii'):
-##        print('Hello')
-##    elif(u=='Hello'):
-##        print("Hii")
-##    elif(u=="What is Your Name "):
-##        print("Poonam")
-##    elif(u=="What is the Time "):
-##        t=time.ctime()
-##        print(t[11:19])
-##    elif(u=='Thank You') or (u=="Bye"):
-##        print("It was Nice Talking with You")
-##    else:
-##        print("I am Trained for this yet")
-##    q=u
-##    
+import time
+q='1'
+while(q!='*'):
+    u=input("Enter Your Question: ")
+    if(u=='Hii'):
+        print('Hello')
+    elif(u=='Hello'):
+        print("Hii")
+    elif(u=="What is Your Name "):
+        print("Poonam")
+    elif(u=="What is the Time "):
+        t=time.ctime()
+        print(t[11:19])
+    elif(u=='Thank You') or (u=="Bye"):
+        print("It was Nice Talking with You")
+    else:
+        print("I am Trained for this yet")
+    q=u
 
 
 # 9. Random
-##
-##import random as r
-##d=r.random()
-##print(d)
-##
-### 10.
-##
-##d=r.randint(0,100)
-##print(d)
+
+import random as r
+d=r.random()
+print(d)
+
+# 10.
+
+d=r.randint(0,100)
+print(d)
 
 # 11.
 import random as r
