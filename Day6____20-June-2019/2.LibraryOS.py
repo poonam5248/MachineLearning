@@ -18,20 +18,21 @@ print(os.getcwd()) # Get current working directory
 
 # 2.
 
-##import os
-##print(os.name)
-##print(os.path)
-##cd=os.getcwd()
-##print(cd)
-##ls=os.listdir()
-##print(ls)
-##r='F:\Machine Learning' in ls
-##if(r==True):
-##    ind=ls.index('F:\Machine Learning')
-##path=cd+'\\'+ls[ind]
-##os.chdir(path) # Change directory
-##print(cd)
-##print(os.listdir())
+import os
+print(os.name)
+print(os.path)
+cd=os.getcwd()
+print(cd)
+ls=os.listdir()
+print(ls)
+r='Day6____20-June-2019' in ls
+if(r==True):
+    ind=ls.index('Day6____20-June-2019')
+path=cd+"\\"+ls[ind]
+os.chdir(path) # Change directory
+cd=os.getcwd()
+print(cd)
+print(os.listdir())
 
 # 3.
 
