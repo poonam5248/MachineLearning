@@ -205,7 +205,7 @@ plt.show()
 # 11.
 
 import pandas as pd
-d=pd.read_csv(r"F:\Machine Learning\Day12___28-June-2019\iris.csv")
+d=pd.read_csv(r"F:\Machine Learning\Day12___28-June-2019\4.Iris.csv")
 u=d[['a']]
 v=d[['b']]
 plt.plot(u,'*g')
