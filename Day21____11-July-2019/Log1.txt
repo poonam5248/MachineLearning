@@ -1,0 +1,10 @@
+Poonam	Hii
+Nikhil	Hello
+Poonam	How Are You
+Nikhil	I am Good U tell
+hii
+Hello
+How are you
+I am good U tell
+I am fine
+Thank you
