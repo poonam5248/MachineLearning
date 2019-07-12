@@ -56,8 +56,13 @@ print(data)
 if('time' in data):
     print(time.ctime())
 
-elif(data=='Hello'):
+elif(data=='hello'):
     print("Hii")
+elif(data=='how are you'):
+    print("I am Good")
+
+elif(data=="techienest"):
+    print("Welcome")
 else:
     print("Bye")
 
