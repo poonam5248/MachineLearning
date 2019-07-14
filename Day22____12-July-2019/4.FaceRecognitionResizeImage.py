@@ -29,7 +29,7 @@ while(1):
         e=fr.face_encodings(img,fL)[0]
         f=fr.compare_faces(ke,e)
         print(f)
-        # (right(index 0),top(index 1),left(index 2),bottom(index 3))
+        # (top(index 0),right(index 1),bottom(index 2),left(index 3))
         
         x1=fL[0][3]*4
         y1=fL[0][0]*4

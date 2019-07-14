@@ -1,33 +1,31 @@
 import face_recognition as fr
 import cv2
+import pandas as pd
 v=cv2.VideoCapture(0)
-
-
-name=['Poonam','Pushp']
-i=fr.load_image_file('New Doc 2018-08-06_1.jpg')
-j=fr.load_image_file('PIC PUSHP.jpg')
-fL1=fr.face_locations(i)
-##print(fL1)
-fL2=fr.face_locations(j)
-##print(fL2)
-ke1=fr.face_encodings(i,fL1)[0]
-##print(ke1)
-ke2=fr.face_encodings(j,fL2)[0]
-##print(ke2)
-ke=[ke1,ke2]
-##print(ke)
+##ke=pd.read_csv('log1.csv')
+n=ke[['Name']]
+k=ke[['Encoding']]
+##i=fr.load_image_file('New Doc 2018-08-06_1.jpg')
+##j=fr.load_image_file('PIC PUSHP.jpg')
+##fL1=fr.face_locations(i)
+####print(fL1)
+##fL2=fr.face_locations(j)
+####print(fL2)
+##ke1=fr.face_encodings(i,fL1)[0]
+####print(ke1)
+##ke2=fr.face_encodings(j,fL2)[0]
+####print(ke2)
+##ke=[ke1,ke2]
+####print(ke)
 
 while(1):
     r,img=v.read()
     fL=fr.face_locations(img)
-
-
     if(len(fL)>0):
-        
         e=fr.face_encodings(img,fL)[0]
         f=fr.compare_faces(ke,e)
         print(f)
-        # (top(index 0),right(index 1),bottom(index 2),left(index 3))
+        # (right(index 0),top(index 1),left(index 2),bottom(index 3))
         
         x1=fL[0][3]
         y1=fL[0][0]
@@ -38,7 +36,7 @@ while(1):
         r=True in f
         if(r==True):
             ind=f.index(True)
-            print(name[ind])
+            print(n[ind])
     cv2.imshow('image',img)
     k=cv2.waitKey(5)
     if(k==ord('q')):
