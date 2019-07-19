@@ -1,0 +1,16 @@
+pip3 install torch
+
+pytorch is same as numpy
+
+pytorch is a theano
+
+neural network can be made from numpy also
+
+theano made from numpy and pandas and pytorch made from theano
+
+pytorch has identical functions as numpy
+
+pytorch has predefined functions 
+
+RNN And LSTM(Long Short Term Memory)
+
