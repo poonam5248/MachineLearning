@@ -247,9 +247,9 @@ def conversation(user_name):
 
             text_to_speech("Tell msg:")
             g=s.SMTP("smtp.gmail.com",587)
-            a='kaurpoonamgni2326@gmail.com'
-            b='luvudad5248'
-            c='kaurpoonamgni0203@gmail.com'
+            a=*****************************## Sender Email
+            b=***************************## Password
+            c=**************************## Receiver Email
             d=speechrecognizer()
             e='send successfully'
             print("Start")
