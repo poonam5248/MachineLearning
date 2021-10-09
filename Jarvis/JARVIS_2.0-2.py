@@ -39,7 +39,7 @@ print("running.....")
 ##my_image = face_recognition.load_image_file(r'G:\arpit photo\akshay.jpg')
 ##my_face_encoding = face_recognition.face_encodings(my_image)[0]
 ##known_face_encodings = [my_face_encoding]
-##known_face_names = ["akshay"]
+##known_face_names = ["poonam"]
 
 with open(r"F:\Machine Learning\Jarvis\admin.csv",'r') as new_file:
     csv_reader= csv.reader(new_file)
